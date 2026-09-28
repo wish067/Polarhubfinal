@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PolarHub | India's Polar Science</title>
+
+    <link rel="stylesheet" href="polar.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                ❄
+            </div>
+
+            <div class="logo-text">
+                Polar<span>Hub</span>
+            </div>
+
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="#repository-content">
+                Knowledge Repository
+            </a>
+
+            <a href="#arctic-presence">
+                Arctic Presence
+            </a>
+
+            <a href="#media-content">
+                Media
+            </a>
+
+            <a href="#outreach-content">
+                Outreach & Education
+            </a>
+
+        </div>
+
+
+        <div class="nav-right">
+
+            <input
+                type="text"
+                class="search-box"
+                placeholder="Search..."
+                id="researchSearch"
+                onkeyup="searchResearch()"
+            >
+
+            <div class="profile">
+                👤
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-small-title">
+                INDIA IN POLAR REGIONS:
+            </div>
+
+            <h1>
+                Exploring the Frontier of Climate Science
+            </h1>
+
+            <p class="hero-description">
+                Centralized access to Arctic, Antarctic and
+                Himalayan research initiatives.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         FEATURE CARDS
+    ========================================== -->
+
+    <section class="features">
+
+
+        <div
+            class="feature-card"
+            onclick="showRepository()"
+        >
+
+            <div class="feature-icon">
+                📚
+            </div>
+
+            <h2>
+                Knowledge Repository
+            </h2>
+
+            <p>
+                Explore India's polar research
+                and scientific knowledge.
+            </p>
+
+            <button class="card-button">
+                Explore →
+            </button>
+
+        </div>
+
+
+
+        <div
+            class="feature-card"
+            onclick="scrollToArctic()"
+        >
+
+            <div class="feature-icon">
+                ❄️
+            </div>
+
+            <h2>
+                Station Tracker
+            </h2>
+
+            <p>
+                Discover India's presence in
+                the Arctic and Antarctic.
+            </p>
+
+            <button class="card-button">
+                Explore →
+            </button>
+
+        </div>
+
+
+
+        <div
+            class="feature-card"
+            onclick="showMedia()"
+        >
+
+            <div class="feature-icon">
+                🎥
+            </div>
+
+            <h2>
+                Media Hub
+            </h2>
+
+            <p>
+                Watch videos and discover
+                polar science stories.
+            </p>
+
+            <button class="card-button">
+                Watch →
+            </button>
+
+        </div>
+
+
+
+        <div
+            class="feature-card"
+            onclick="showEducation()"
+        >
+
+            <div class="feature-icon">
+                🎓
+            </div>
+
+            <h2>
+                Outreach & Education
+            </h2>
+
+            <p>
+                Learn about polar science
+                through interactive activities.
+            </p>
+
+            <button class="card-button">
+                Learn →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         NEWS
+    ========================================== -->
+
+    <section class="news-section">
+
+        <div class="news-box">
+
+            <h2>
+                📰 Quick Polar News
+            </h2>
+
+            <div class="news-item">
+                <span>❄️</span>
+                India continues scientific research
+                in the Arctic and Antarctic.
+            </div>
+
+            <div class="news-item">
+                <span>🌍</span>
+                Polar research helps scientists
+                understand Earth's changing climate.
+            </div>
+
+            <div class="news-item">
+                <span>🔬</span>
+                India's polar research programmes
+                support scientific discovery.
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         KNOWLEDGE REPOSITORY
+    ========================================== -->
+
+    <section
+        class="repository-section"
+        id="repository-content"
+    >
+
+        <h2>
+            Knowledge Repository
+        </h2>
+
+        <p>
+            Explore research and scientific activities
+            across India's polar regions.
+        </p>
+
+
+        <div class="research-cards">
+
+
+            <!-- ANTARCTIC -->
+
+            <div class="research-card">
+
+                <img
+                    src="images/antarctic.jpg"
+                    alt="Antarctic Research"
+                >
+
+                <h3>
+                    Antarctic Research
+                </h3>
+
+                <p>
+                    Explore India's scientific research
+                    and activities in Antarctica.
+                </p>
+
+                <button
+                    onclick="window.open(
+                        'https://www.ncpor.res.in/pages/view/315-researchactivities',
+                        '_blank'
+                    )"
+                >
+                    Read More
+                </button>
+
+            </div>
+
+
+
+            <!-- ARCTIC -->
+
+            <div class="research-card">
+
+                <img
+                    src="images/arctic.jpg"
+                    alt="Arctic Research"
+                >
+
+                <h3>
+                    Arctic Research
+                </h3>
+
+                <p>
+                    Discover India's scientific
+                    activities and research in the Arctic.
+                </p>
+
+                <button
+                    onclick="window.open(
+                        'https://ncpor.res.in/arctics',
+                        '_blank'
+                    )"
+                >
+                    Read More
+                </button>
+
+            </div>
+
+
+
+            <!-- HIMALAYAN -->
+
+            <div class="research-card">
+
+                <img
+                    src="images/himalayan-new.jpg"
+                    alt="Himalayan Research"
+                >
+
+                <h3>
+                    Himalayan Research
+                </h3>
+
+                <p>
+                    Learn about cryosphere, climate
+                    and Himalayan research.
+                </p>
+
+                <button
+                    onclick="window.open(
+                        'https://ncpor.res.in/pages/view/325/239-cryosphere-and-climate',
+                        '_blank'
+                    )"
+                >
+                    Read More
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         INSIDE INDIA'S ARCTIC PRESENCE
+    ========================================== -->
+
+    <section
+        class="arctic-presence-section"
+        id="arctic-presence"
+    >
+
+        <div class="arctic-content">
+
+            <div class="arctic-text">
+
+                <p class="arctic-label">
+                    ❄️ MoES • ARCTIC RESEARCH
+                </p>
+
+                <h2>
+                    Inside India's Arctic Presence
+                </h2>
+
+                <h3>
+                    Discover Himadri
+                </h3>
+
+                <p>
+                    Learn about Himadri, India's first
+                    Arctic research station, and its role
+                    in climate research.
+                </p>
+
+                <p>
+                    India's Arctic research supports the
+                    study of climate, atmosphere,
+                    glaciers and other polar processes.
+                </p>
+
+                <button
+                    class="arctic-button"
+                    onclick="openHimadri()"
+                >
+                    Explore Himadri →
+                </button>
+
+            </div>
+
+
+            <div class="arctic-image">
+
+                <img
+                    src="images/arctic.jpg"
+                    alt="India's Arctic Research"
+                >
+
+                <div class="arctic-caption">
+
+                    <strong>
+                        Himadri
+                    </strong>
+
+                    <span>
+                        India's Arctic Research Station
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         MEDIA HUB
+    ========================================== -->
+
+    <section
+        id="media-content"
+        class="repository-section"
+    >
+
+        <h2>
+            Media Hub
+        </h2>
+
+        <p>
+            Explore videos and stories related
+            to India's polar research.
+        </p>
+
+
+        <div class="research-cards">
+
+            <div class="research-card">
+
+                <iframe
+                    width="100%"
+                    height="220"
+                    src="https://www.youtube.com/embed/VIDEO_ID_1"
+                    title="Polar Science Video"
+                    frameborder="0"
+                    allowfullscreen
+                ></iframe>
+
+                <h3>
+                    Polar Science
+                </h3>
+
+            </div>
+
+
+            <div class="research-card">
+
+                <iframe
+                    width="100%"
+                    height="220"
+                    src="https://www.youtube.com/embed/VIDEO_ID_2"
+                    title="India Polar Research"
+                    frameborder="0"
+                    allowfullscreen
+                ></iframe>
+
+                <h3>
+                    India's Polar Research
+                </h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         OUTREACH & EDUCATION
+    ========================================== -->
+
+    <section
+        class="outreach-section"
+        id="outreach-content"
+    >
+
+        <div class="outreach-header">
+
+            <p>
+                POLAR OUTREACH & EDUCATION
+            </p>
+
+            <h2>
+                Learn. Explore. Discover.
+            </h2>
+
+            <span>
+                Explore polar science through
+                interactive learning, quizzes and
+                research-based questions.
+            </span>
+
+        </div>
+
+
+        <div class="outreach-cards">
+
+
+            <!-- ASK POLAR AI -->
+
+            <div class="outreach-card">
+
+                <div class="outreach-icon">
+                    🤖
+                </div>
+
+                <h3>
+                    Ask PolarAI
+                </h3>
+
+                <p>
+                    Ask questions about Antarctica,
+                    the Arctic, glaciers, climate
+                    and India's polar research.
+                </p>
+
+                <button onclick="openPolarAI()">
+                    Ask PolarAI
+                </button>
+
+            </div>
+
+
+
+            <!-- KIDS QUIZ -->
+
+            <div class="outreach-card">
+
+                <div class="outreach-icon">
+                    🧠
+                </div>
+
+                <h3>
+                    Kids Polar Quiz
+                </h3>
+
+                <p>
+                    Test your knowledge with fun
+                    and simple questions about
+                    polar science.
+                </p>
+
+                <button onclick="startKidsQuiz()">
+                    Start Quiz
+                </button>
+
+            </div>
+
+
+
+            <!-- RESEARCH QUESTIONS -->
+
+            <div class="outreach-card">
+
+                <div class="outreach-icon">
+                    🔬
+                </div>
+
+                <h3>
+                    Research Questions
+                </h3>
+
+                <p>
+                    Explore deeper questions about
+                    polar research, climate science
+                    and scientific discoveries.
+                </p>
+
+                <button onclick="openResearchChat()">
+                    Explore Research
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================
+             POLAR AI CHAT
+        ====================================== -->
+
+        <div
+            class="ai-chat"
+            id="polar-ai-section"
+            style="display: none;"
+        >
+
+            <div
+                class="chat-messages"
+                id="chatMessages"
+            >
+
+                <div class="bot-message">
+
+                    👋 Hi! I'm PolarAI.
+
+                    <br><br>
+
+                    Ask me anything about polar science,
+                    Antarctica, the Arctic, glaciers,
+                    climate or India's polar research.
+
+                </div>
+
+            </div>
+
+
+            <div class="ai-search">
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Ask PolarAI..."
+                    onkeydown="handleEnter(event)"
+                >
+
+                <button onclick="askPolarAI()">
+                    Ask
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================
+             KIDS POLAR QUIZ
+        ====================================== -->
+
+        <div
+            class="quiz-container"
+            id="kidsQuiz"
+        >
+
+            <div class="quiz-chat-header">
+
+                <div class="quiz-ai-icon">
+                    ❄️
+                </div>
+
+                <div>
+
+                    <h2>
+                        PolarAI Kids Quiz
+                    </h2>
+
+                    <p>
+                        Test your polar science knowledge!
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="quiz-messages"
+                id="quizMessages"
+            >
+
+                <div class="bot-message">
+
+                    👋 Hi! I'm PolarAI.
+
+                    <br><br>
+
+                    I'll ask you 5 questions about
+                    polar science.
+
+                    <br><br>
+
+                    Just type your answer below!
+
+                </div>
+
+            </div>
+
+
+            <div class="quiz-input-area">
+
+                <input
+                    type="text"
+                    id="quizInput"
+                    placeholder="Type your answer..."
+                    onkeydown="handleQuizEnter(event)"
+                >
+
+                <button onclick="sendQuizAnswer()">
+                    ➤
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================
+             RESEARCH CHAT
+        ====================================== -->
+
+        <div
+            class="research-chat-container"
+            id="researchChat"
+        >
+
+            <h2>
+                🔬 Research Questions
+            </h2>
+
+            <p>
+                Explore questions about polar research,
+                climate science and scientific discoveries.
+            </p>
+
+
+            <div
+                class="research-messages"
+                id="researchMessages"
+            >
+
+                <div class="bot-message">
+
+                    🔬 Hello! Ask me a research
+                    question about polar science.
+
+                </div>
+
+            </div>
+
+
+            <div class="research-input">
+
+                <input
+                    type="text"
+                    id="researchInput"
+                    placeholder="Ask a research question..."
+                    onkeydown="handleResearchEnter(event)"
+                >
+
+                <button onclick="askResearchQuestion()">
+                    Ask
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <div>
+            © 2026 PolarHub
+        </div>
+
+        <div>
+            India's Polar Science Outreach Portal
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script>
+
+
+        /* =========================================
+           KNOWLEDGE REPOSITORY
+        ========================================== */
+
+        function showRepository() {
+
+            const section =
+                document.getElementById("repository-content");
+
+            section.style.display = "block";
+
+            section.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+
+        function searchResearch() {
+
+            const input =
+                document
+                    .getElementById("researchSearch")
+                    .value
+                    .toLowerCase();
+
+            const cards =
+                document.querySelectorAll(".research-card");
+
+            cards.forEach(function(card) {
+
+                const text =
+                    card.innerText.toLowerCase();
+
+                if (text.includes(input)) {
+                    card.style.display = "";
+                }
+                else {
+                    card.style.display = "none";
+                }
+
+            });
+        }
+
+
+
+        /* =========================================
+           ARCTIC PRESENCE
+        ========================================== */
+
+        function scrollToArctic() {
+
+            const section =
+                document.getElementById("arctic-presence");
+
+            section.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+
+        function openHimadri() {
+
+            window.open(
+                "https://www.ncpor.res.in/app/webroot/pages/view/340-himadri-station",
+                "_blank"
+            );
+        }
+
+
+
+        /* =========================================
+           MEDIA
+        ========================================== */
+
+        function showMedia() {
+
+            const section =
+                document.getElementById("media-content");
+
+            section.style.display = "block";
+
+            section.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+
+
+        /* =========================================
+           OUTREACH
+        ========================================== */
+
+        function showEducation() {
+
+            const section =
+                document.getElementById("outreach-content");
+
+            section.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+
+
+        /* =========================================
+           POLAR AI
+        ========================================== */
+
+        function openPolarAI() {
+
+            const ai =
+                document.getElementById("polar-ai-section");
+
+            const quiz =
+                document.getElementById("kidsQuiz");
+
+            const research =
+                document.getElementById("researchChat");
+
+            ai.style.display = "block";
+
+            quiz.style.display = "none";
+
+            research.style.display = "none";
+
+            ai.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+
+        function handleEnter(event) {
+
+            if (event.key === "Enter") {
+                askPolarAI();
+            }
+        }
+
+
+        function askPolarAI() {
+
+            const input =
+                document.getElementById("userInput");
+
+            const text =
+                input.value.trim();
+
+            if (text === "") {
+                return;
+            }
+
+
+            const messages =
+                document.getElementById("chatMessages");
+
+
+            const userMessage =
+                document.createElement("div");
+
+            userMessage.className =
+                "user-message";
+
+            userMessage.textContent =
+                text;
+
+            messages.appendChild(userMessage);
+
+
+            input.value = "";
+
+
+            const thinking =
+                document.createElement("div");
+
+            thinking.className =
+                "bot-message";
+
+            thinking.textContent =
+                "PolarAI is thinking...";
+
+            messages.appendChild(thinking);
+
+
+            messages.scrollTop =
+                messages.scrollHeight;
+
+
+            setTimeout(function() {
+
+                const question =
+                    text.toLowerCase();
+
+                let response =
+                    "🌍 Polar regions are important areas of scientific research because they help scientists understand Earth's climate and environmental changes.";
+
+
+                if (
+                    question.includes("hello") ||
+                    question.includes("hi")
+                ) {
+
+                    response =
+                        "👋 Hello! I'm PolarAI. Ask me anything about the Arctic, Antarctica, glaciers, climate or India's polar research.";
+
+                }
+
+                else if (
+                    question.includes("antarctica")
+                ) {
+
+                    response =
+                        "❄️ Antarctica is the continent surrounding the South Pole. Scientists study its ice, atmosphere, oceans and climate.";
+
+                }
+
+                else if (
+                    question.includes("arctic")
+                ) {
+
+                    response =
+                        "🧊 The Arctic is the region around the North Pole. India conducts scientific research there through its Arctic programme.";
+
+                }
+
+                else if (
+                    question.includes("india")
+                ) {
+
+                    response =
+                        "🇮🇳 India has been involved in polar research in both the Arctic and Antarctic regions.";
+
+                }
+
+                else if (
+                    question.includes("glacier")
+                ) {
+
+                    response =
+                        "🏔️ Scientists study glaciers to understand changes in ice, climate and the cryosphere.";
+
+                }
+
+                else if (
+                    question.includes("climate")
+                ) {
+
+                    response =
+                        "🌍 Polar regions are important for climate research because changes in ice, oceans and atmosphere can provide information about Earth's changing climate.";
+
+                }
+
+                else if (
+                    question.includes("ice")
+                ) {
+
+                    response =
+                        "🧊 Sea ice and land ice are important parts of polar science. Scientists monitor how they change over time.";
+
+                }
+
+
+                thinking.remove();
+
+
+                const botMessage =
+                    document.createElement("div");
+
+                botMessage.className =
+                    "bot-message";
+
+                botMessage.textContent =
+                    response;
+
+                messages.appendChild(botMessage);
+
+
+                messages.scrollTop =
+                    messages.scrollHeight;
+
+            }, 700);
+        }
+
+
+
+        /* =========================================
+           KIDS QUIZ
+        ========================================== */
+
+        const quizQuestions = [
+
+            {
+                question:
+                    "Which region is located around the North Pole?",
+
+                options: [
+                    "Arctic",
+                    "Antarctica",
+                    "Himalayas",
+                    "Sahara"
+                ],
+
+                answer:
+                    "Arctic"
+            },
+
+
+            {
+                question:
+                    "What do scientists study when they monitor glaciers?",
+
+                options: [
+                    "Changes in ice and climate",
+                    "Only ocean tides",
+                    "Only desert sand",
+                    "Only city traffic"
+                ],
+
+                answer:
+                    "Changes in ice and climate"
+            },
+
+
+            {
+                question:
+                    "True or False: India conducts scientific research in both the Arctic and Antarctic regions.",
+
+                options: [
+                    "True",
+                    "False"
+                ],
+
+                answer:
+                    "True"
+            },
+
+
+            {
+                question:
+                    "Why are polar regions important for climate research?",
+
+                options: [
+                    "They provide information about Earth's changing climate",
+                    "They have no connection to climate",
+                    "They contain all of Earth's forests",
+                    "They are the warmest places on Earth"
+                ],
+
+                answer:
+                    "They provide information about Earth's changing climate"
+            },
+
+
+            {
+                question:
+                    "Which of these is studied in polar science?",
+
+                options: [
+                    "Sea ice",
+                    "Traffic signals",
+                    "Shopping malls",
+                    "City roads"
+                ],
+
+                answer:
+                    "Sea ice"
+            }
+
+        ];
+
+
+        let currentQuizQuestion = 0;
+
+        let quizScore = 0;
+
+        let quizWaiting = false;
+
+
+
+        /* =========================================
+           START QUIZ
+        ========================================== */
+
+        function startKidsQuiz() {
+
+            const quiz =
+                document.getElementById("kidsQuiz");
+
+            const ai =
+                document.getElementById("polar-ai-section");
+
+            const research =
+                document.getElementById("researchChat");
+
+
+            quiz.style.display = "block";
+
+            ai.style.display = "none";
+
+            research.style.display = "none";
+
+
+            currentQuizQuestion = 0;
+
+            quizScore = 0;
+
+            quizWaiting = false;
+
+
+            const messages =
+                document.getElementById("quizMessages");
+
+
+            messages.innerHTML = `
+
+                <div class="bot-message">
+
+                    👋 Hi! I'm PolarAI.
+
+                    <br><br>
+
+                    I'll ask you 5 questions about
+                    polar science.
+
+                    <br><br>
+
+                    Just type your answer below!
+
+                </div>
+
+            `;
+
+
+            quiz.scrollIntoView({
+                behavior: "smooth"
+            });
+
+
+            setTimeout(function() {
+
+                sendNextQuizQuestion();
+
+            }, 700);
+
+
+            document
+                .getElementById("quizInput")
+                .focus();
+        }
+
+
+
+        /* =========================================
+           NEXT QUESTION
+        ========================================== */
+
+        function sendNextQuizQuestion() {
+
+            if (
+                currentQuizQuestion >=
+                quizQuestions.length
+            ) {
+
+                finishQuiz();
+
+                return;
+            }
+
+
+            const messages =
+                document.getElementById("quizMessages");
+
+
+            const current =
+                quizQuestions[currentQuizQuestion];
+
+
+            const botMessage =
+                document.createElement("div");
+
+
+            botMessage.className =
+                "bot-message";
+
+
+            botMessage.innerHTML =
+
+                "<strong>Question " +
+                (currentQuizQuestion + 1) +
+                " of " +
+                quizQuestions.length +
+                "</strong>" +
+
+                "<br><br>" +
+
+                current.question +
+
+                "<br><br>" +
+
+                "<strong>Options:</strong> " +
+
+                current.options.join(" • ");
+
+
+            messages.appendChild(botMessage);
+
+
+            messages.scrollTop =
+                messages.scrollHeight;
+        }
+
+
+
+        /* =========================================
+           CHECK QUIZ ANSWER
+        ========================================== */
+
+        function sendQuizAnswer() {
+
+            if (quizWaiting) {
+                return;
+            }
+
+
+            const input =
+                document.getElementById("quizInput");
+
+
+            const answer =
+                input.value.trim();
+
+
+            if (answer === "") {
+                return;
+            }
+
+
+            if (
+                currentQuizQuestion >=
+                quizQuestions.length
+            ) {
+                return;
+            }
+
+
+            const messages =
+                document.getElementById("quizMessages");
+
+
+            /* Show user's answer */
+
+            const userMessage =
+                document.createElement("div");
+
+
+            userMessage.className =
+                "user-message";
+
+
+            userMessage.textContent =
+                answer;
+
+
+            messages.appendChild(userMessage);
+
+
+            input.value = "";
+
+
+            /* Current question */
+
+            const current =
+                quizQuestions[currentQuizQuestion];
+
+
+            const userAnswer =
+                answer
+                    .toLowerCase()
+                    .trim();
+
+
+            const correctAnswer =
+                current.answer
+                    .toLowerCase()
+                    .trim();
+
+
+            /*
+                IMPORTANT FIX:
+
+                We ONLY compare the user's answer
+                with the actual correct answer.
+
+                We DO NOT check all options.
+            */
+
+            let isCorrect =
+                userAnswer === correctAnswer;
+
+
+            /*
+                Allow option number:
+
+                1 = first option
+                2 = second option
+                etc.
+            */
+
+            if (!isCorrect) {
+
+                const optionNumber =
+                    parseInt(userAnswer);
+
+
+                if (
+                    !isNaN(optionNumber) &&
+                    optionNumber >= 1 &&
+                    optionNumber <= current.options.length
+                ) {
+
+                    const selectedOption =
+                        current.options[optionNumber - 1]
+                            .toLowerCase()
+                            .trim();
+
+
+                    isCorrect =
+                        selectedOption === correctAnswer;
+                }
+            }
+
+
+            /*
+                Allow A, B, C, D
+            */
+
+            if (!isCorrect) {
+
+                const letters =
+                    ["a", "b", "c", "d"];
+
+
+                const letterIndex =
+                    letters.indexOf(userAnswer);
+
+
+                if (
+                    letterIndex >= 0 &&
+                    letterIndex < current.options.length
+                ) {
+
+                    const selectedOption =
+                        current.options[letterIndex]
+                            .toLowerCase()
+                            .trim();
+
+
+                    isCorrect =
+                        selectedOption === correctAnswer;
+                }
+            }
+
+
+            /* Show result */
+
+            if (isCorrect) {
+
+                quizScore++;
+
+                showQuizBotMessage(
+                    "✅ Correct! Great job! 🌟"
+                );
+
+            }
+
+            else {
+
+                showQuizBotMessage(
+                    "❌ Not quite! The correct answer is: " +
+                    current.answer
+                );
+            }
+
+
+            currentQuizQuestion++;
+
+            quizWaiting = true;
+
+
+            setTimeout(function() {
+
+                quizWaiting = false;
+
+                sendNextQuizQuestion();
+
+            }, 1000);
+
+        }
+
+
+
+        /* =========================================
+           QUIZ BOT MESSAGE
+        ========================================== */
+
+        function showQuizBotMessage(text) {
+
+            const messages =
+                document.getElementById("quizMessages");
+
+
+            const botMessage =
+                document.createElement("div");
+
+
+            botMessage.className =
+                "bot-message";
+
+
+            botMessage.textContent =
+                text;
+
+
+            messages.appendChild(botMessage);
+
+
+            messages.scrollTop =
+                messages.scrollHeight;
+        }
+
+
+
+        /* =========================================
+           FINISH QUIZ
+        ========================================== */
+
+        function finishQuiz() {
+
+            const messages =
+                document.getElementById("quizMessages");
+
+
+            const result =
+                document.createElement("div");
+
+
+            result.className =
+                "bot-message";
+
+
+            result.innerHTML =
+
+                "🎉 <strong>Quiz Completed!</strong>" +
+
+                "<br><br>" +
+
+                "Your score: <strong>" +
+
+                quizScore +
+
+                " / " +
+
+                quizQuestions.length +
+
+                "</strong>" +
+
+                "<br><br>" +
+
+                "🌍 Great job exploring polar science!" +
+
+                "<br><br>" +
+
+                "<button onclick='startKidsQuiz()'>" +
+
+                "🔄 Try Again" +
+
+                "</button>";
+
+
+            messages.appendChild(result);
+
+
+            messages.scrollTop =
+                messages.scrollHeight;
+        }
+
+
+
+        /* =========================================
+           QUIZ ENTER KEY
+        ========================================== */
+
+        function handleQuizEnter(event) {
+
+            if (event.key === "Enter") {
+
+                sendQuizAnswer();
+
+            }
+        }
+
+
+
+        /* =========================================
+           RESEARCH QUESTIONS
+        ========================================== */
+
+        function openResearchChat() {
+
+            const research =
+                document.getElementById("researchChat");
+
+            const ai =
+                document.getElementById("polar-ai-section");
+
+            const quiz =
+                document.getElementById("kidsQuiz");
+
+
+            research.style.display = "block";
+
+            ai.style.display = "none";
+
+            quiz.style.display = "none";
+
+
+            research.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+
+        function handleResearchEnter(event) {
+
+            if (event.key === "Enter") {
+
+                askResearchQuestion();
+
+            }
+        }
+
+
+        function askResearchQuestion() {
+
+            const input =
+                document.getElementById("researchInput");
+
+
+            const text =
+                input.value.trim();
+
+
+            if (text === "") {
+                return;
+            }
+
+
+            const messages =
+                document.getElementById("researchMessages");
+
+
+            const userMessage =
+                document.createElement("div");
+
+
+            userMessage.className =
+                "user-message";
+
+
+            userMessage.textContent =
+                text;
+
+
+            messages.appendChild(userMessage);
+
+
+            input.value = "";
+
+
+            const question =
+                text.toLowerCase();
+
+
+            let response =
+                "🔬 Polar research helps scientists understand changes in Earth's climate, ice, oceans and atmosphere.";
+
+
+            if (
+                question.includes("climate")
+            ) {
+
+                response =
+                    "🌍 Polar regions are important climate research areas because changes in ice, oceans and atmosphere can provide valuable information about Earth's climate system.";
+
+            }
+
+            else if (
+                question.includes("arctic")
+            ) {
+
+                response =
+                    "❄️ Arctic research helps scientists study sea ice, atmosphere, ecosystems and climate processes.";
+
+            }
+
+            else if (
+                question.includes("antarctica")
+            ) {
+
+                response =
+                    "🧊 Antarctic research includes studies of ice sheets, oceans, atmosphere, climate and polar ecosystems.";
+
+            }
+
+            else if (
+                question.includes("glacier")
+            ) {
+
+                response =
+                    "🏔️ Glacier research helps scientists understand how the cryosphere changes over time and how those changes relate to climate.";
+
+            }
+
+
+            setTimeout(function() {
+
+                const botMessage =
+                    document.createElement("div");
+
+
+                botMessage.className =
+                    "bot-message";
+
+
+                botMessage.textContent =
+                    response;
+
+
+                messages.appendChild(botMessage);
+
+
+                messages.scrollTop =
+                    messages.scrollHeight;
+
+            }, 500);
+
+        }
+
+    </script>
+
+</body>
+
+</html>
